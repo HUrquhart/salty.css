@@ -1,0 +1,14 @@
+/***************************************************************************************
+*    Title: HTML 5 TEST PAGE
+*    Author: https://github.com/cbracco
+*    Date: 20 MARCH 2018
+*    Code version: 0.8.0
+*    Availability: https://github.com/cbracco/html5-test-page
+***************************************************************************************/
+/***************************************************************************************
+*    Title: PRISM.JS
+*    Author: PRISM.JS prismjs.com
+*    Date: 2019
+*    Code version: production / custom
+*    Availability: https://github.com/PrismJS
+***************************************************************************************/

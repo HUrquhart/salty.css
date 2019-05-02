@@ -1,0 +1,107 @@
+@import "reset";
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Marvel|Play');
+
+// salt shaker color pallete
+$red: #fd1618;
+$green: #00ac09;
+$blue: #0288D1 ;
+$yellow: #FFEA00 ;
+$purple: #360259 ;
+$gray: #595959 ;
+$grey: $gray;
+$light-grey: #eaeaea;
+$pink: #ff64c0;
+$orange: #ff5217 ;
+                      
+// theme color pallete
+// https://coolors.co/3b3561-00f0b5-ead94c-dd7373-f9e7e7
+$primary: #3B3561;     //DEEP KOAMARU
+$secondary: #00F0B5;  //MEDIUM SPRING GREEN
+$tertiary: #EAD94C;  //SANDSTORM
+$color-4: #DD7373;  //TANGO PINK
+$color-5: #F9E7E7; //LINEN
+
+$link-color: $orange;
+
+$base-font-color: #333;
+
+*{color: $base-font-color; box-sizing: border-box;}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Typography setup
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+html,body{font-family: 'Play', sans-serif;}
+h1,h2,h3,h4,h5,h6{font-family: 'Marvel', sans-serif;}
+
+// typography rules set using https://type-scale.com/
+html {font-size: 18px;}
+body { background-color: white; font-weight: 400; line-height: 1.45; color: #333; }
+p {margin-bottom: 1.25em;}
+h1, h2, h3, h4, h5 { margin: 2.75rem 0 1rem; font-weight: 400; line-height: 1.15; }
+h1 { margin-top: 0; font-size: 3.052em; }
+h2 {font-size: 2.441em;}
+h3 {font-size: 1.953em;}
+h4 {font-size: 1.563em;}
+h5 {font-size: 1.25em;}
+small, .text_small {font-size: 0.8em;}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.--primary{ color: $primary !important;}
+.--secondary{ color: $secondary !important;}
+.--tertiary{ color: $tertiary !important;}
+
+.--error{ color: $red !important;}
+.--warning{ color: $orange !important;}
+.--basic{ color: $blue !important;}
+.--success{ color: $green !important;}
+.--notice{ color: $grey !important;}
+
+// colors
+.--red{ color: $red !important;}
+.--green{ color: $green !important;}
+.--blue{ color: $blue !important;}
+.--yellow{ color: $yellow !important;}
+.--purple{ color: $purple !important;}
+.--grey{ color: $grey !important;}
+.--gray{ color: $gray !important;}
+.--pink{ color: $pink !important;}
+.--orange{ color: $orange !important;}
+
+.--border{ border: 1px solid; border-radius: 5px !important; padding: 10px !important;}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.S-Container{max-width: 1000px;margin: 0 auto;}
+
+a{
+  text-decoration: none;
+  color: $link-color;
+  &:hover:not(.--border){
+    text-decoration: underline;
+    -webkit-transition: text-decoration 2s; /* For Safari 3.1 to 6.0 */
+    transition: text-decoration 2s;
+  }
+  & .--border:hover{background: inherit;}
+}
+
+blockquote{padding: 30px;font-style: italic;}
+
+// code blocks
+pre[class*="language-"]:not(.S-Code-Block--shaded,.S-Code-Block--dark){
+  padding-right: 10px !important;
+  background: none !important;
+}
+.S-Code-Block--shaded,.S-Code-Block--dark{
+  & code[class*="language-"], pre[class*="language-"]{text-shadow: none !important;}
+}
+.S-Code-Block--shaded{background: $light-grey !important;}
+.S-Code-Block--dark{background: $base-font-color !important;}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// framework display helpers
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.--inline{ display: inline-block }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

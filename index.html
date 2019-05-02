@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Test Page</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="prism.css">
+  </head>
+  <body>
+    <div id="top"></div>
+    <header role="banner">
+      <div class="S-Container">
+        <h1>A Salty Css Framework</h1>
+        <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks. The font used for headings is
+          <a href="https://fonts.google.com/specimen/Marvel">Marvel</a> and the font used for the remainder of the elements is
+          <a href="https://fonts.google.com/specimen/Play">Play</a> these fonts are provided and served from Google fonts</p>
+      </div>
+    </header>
+
+
+    <main role="main">
+
+      <div class="S-Container">
+        <div id="typography">
+          <section>
+            <h2>Typography</h2>
+            <p>Typography is extremely important to the look and feel of a website and should always be considered before, during and after development. I have made sure to incorporate as many best practices into this framework as possible and I hope you can appreciate this</p>
+            <hr>
+            <h3>Headings</h3>
+            <p>This Framework uses h1 - h6 headings with <a href="https://type-scale.com/" target="_blank">type-scale.com</a> scaling. A h1 heading should only ever be used once on a site and this is primarily for organisational reasons </p>
+            <h1 class="--inline">Heading 1</h1>
+            <h2 class="--inline">Heading 2</h2>
+            <h3 class="--inline">Heading 3</h3>
+            <h4 class="--inline">Heading 4</h4>
+            <h5 class="--inline">Heading 5</h5>
+            <h6 class="--inline">Heading 6</h6>
+            <p><a href="#top">[Top]</a></p>
+
+            <hr>
+            <h3>Paragraphs</h3>
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+
+            <p>A paragraph can also be styled using the helper selectors like so:</p>
+            <p class="--primary">this is a --primary paragraph</p>
+            <p class="--secondary">this is a --secondary paragraph</p>
+            <p class="--tertiary">this is a --tertiary paragraph</p>
+            <p class="--error">this is a --error paragraph</p>
+            <p class="--warning">this is a --warning paragraph</p>
+            <p class="--notice">this is a --notice paragraph</p>
+            <p class="--success">this is a --success paragraph</p>
+            <p class="--basic">this is a --basic paragraph</p>
+            <pre class="S-Code-Block--shaded">
+              <code class="language-html">
+                &lt;p class=&quot;--primary&quot;&gt;this is a --primary paragraph&lt;/p&gt;
+                &lt;p class=&quot;--secondary&quot;&gt;this is a --secondary paragraph&lt;/p&gt;
+                &lt;p class=&quot;--tertiary&quot;&gt;this is a --tertiary paragraph&lt;/p&gt;
+                &lt;p class=&quot;--error&quot;&gt;this is a --error paragraph&lt;/p&gt;
+                &lt;p class=&quot;--warning&quot;&gt;this is a --warning paragraph&lt;/p&gt;
+                &lt;p class=&quot;--notice&quot;&gt;this is a --notice paragraph&lt;/p&gt;
+                &lt;p class=&quot;--success&quot;&gt;this is a --success paragraph&lt;/p&gt;
+                &lt;p class=&quot;--basic&quot;&gt;this is a --basic paragraph&lt;/p&gt;
+              </code>
+            </pre>
+            <p>A paragraph can also use inherit the correct border color when paired with a color helper selector:</p>
+            <p class="--success --border">this is a --success --border paragraph</p>
+            <pre class="S-Code-Block--shaded">
+              <code class="language-html">
+                &lt;p class=&quot;--success --border&quot;&gt;this is a --primary paragraph&lt;/p&gt;
+              </code>
+            </pre>
+
+            <p><a href="#top">[Top]</a></p>
+            <hr>
+            <h3>Links</h3>
+            <p>Anchor tags recieve an automatic style to make it clearer and less obtrusive to the user and they can also have helper styles applied</p>
+            <p><a href="#">Link</a></p>
+            <pre class="S-Code-Block--shaded">
+              <code class="language-html">
+                &lt;a href="#"&gt; Link &lt;/a&gt;
+              </code>
+            </pre>
+            <br>
+            <p>A link can also have helper classes applied</p>
+            <p><a class="--basic --border --red" href="#">basic</a></p>
+            <pre class="S-Code-Block--shaded">
+              <code class="language-html">
+                &lt;a class="--basic --border" href="#"&gt; Link &lt;/a&gt;
+              </code>
+            </pre>
+            <p><a href="#top">[Top]</a></p>
+            <hr>
+            <h3>Blockquotes</h3>
+            <blockquote>      
+              <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
+              <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
+              <cite><a href="#!">Said no one, ever.</a></cite>
+            </blockquote>
+
+            <pre class="S-Code-Block--shaded">
+              <code class="language-html">
+                &lt;blockquote&gt;
+                  &lt;p&gt;A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.&lt;/p&gt;
+                  &lt;p&gt;It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.&lt;/p&gt;
+                  &lt;cite&gt;&lt;a href=&quot;#&quot;&gt;Said no one, ever.&lt;/a&gt;&lt;/cite&gt;
+                &lt;/blockquote&gt;
+              </code>
+            </pre>
+            <p><a href="#top">[Top]</a></p>
+
+            <h3>Code blocks</h3>
+            <p>Code blocks are highlighted with <a href="https://prismjs.com/" target="_blank">prism.js</a>. to use prism you can do the write it the following way</p>
+            <p>The light code block with a border</p>
+            <pre class="S-Code-Block--shaded --red --border">
+              <code class="language-html">
+                &lt;pre class="S-Code-Block--shaded --red --border"&gt;
+                  &lt;code class="language-html"&gt;
+                    &lt;!-- code goes here -- &gt;
+                  &lt;/code&gt;
+                &lt;/pre&gt;
+              </code>
+            </pre>
+            <br>
+            <p>The dark code block with a border</p>
+            <pre class="S-Code-Block--dark --red --border">
+              <code class="language-html">
+                &lt;pre class="S-Code-Block--dark --red --border"&gt;
+                  &lt;code class="language-html"&gt;
+                    &lt;!-- code goes here -- &gt;
+                  &lt;/code&gt;
+                &lt;/pre&gt;
+              </code>
+            </pre>
+            <br>
+            <p>The light code block without a border</p>
+            <pre class="S-Code-Block--dark">
+              <code class="language-html">
+                &lt;pre class="S-Code-Block--dark"&gt;
+                  &lt;code class="language-html"&gt;
+                    &lt;!-- code goes here -- &gt;
+                  &lt;/code&gt;
+                &lt;/pre&gt;
+              </code>
+            </pre>
+            <br>
+            <p>The regular code block with a without a border and with line-numbers</p>
+            <pre>
+              <code class="language-html line-numbers">
+                &lt;pre&gt;
+                  &lt;code class="language-html line-numbers"&gt;
+                    &lt;!-- code goes here -- &gt;
+                  &lt;/code&gt;
+                &lt;/pre&gt;
+              </code>
+            </pre>
+
+            <br>
+            <p>The regular code block without a border or line numbers</p>
+            <pre>
+              <code class="language-html">
+                &lt;pre&gt;
+                  &lt;code class="language-html"&gt;
+                    &lt;!-- code goes here -- &gt;
+                  &lt;/code&gt;
+                &lt;/pre&gt;
+              </code>
+            </pre>
+            <p><a href="#">[top]</a></p>
+            <hr>
+          </section>
+        </div>                    
+          <article id="text__lists">
+            <header><h1>Lists</h1></header>
+            <div>
+              <h3>Definition list</h3>
+              <dl>
+                <dt>Definition List Title</dt>
+                <dd>This is a definition list division.</dd>
+              </dl>
+              <h3>Ordered List</h3>
+              <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+              </ol>
+              <h3>Unordered List</h3>
+              <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+              </ul>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__hr">
+            <header><h1>Horizontal rules</h1></header>
+            <div>
+              <hr>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__tables">
+            <header><h1>Tabular data</h1></header>
+            <table>
+              <caption>Table Caption</caption>
+              <thead>
+              <tr>
+                <th>Table Heading 1</th>
+                <th>Table Heading 2</th>
+                <th>Table Heading 3</th>
+                <th>Table Heading 4</th>
+                <th>Table Heading 5</th>
+              </tr>
+              </thead>
+              <tfoot>
+              <tr>
+                <th>Table Footer 1</th>
+                <th>Table Footer 2</th>
+                <th>Table Footer 3</th>
+                <th>Table Footer 4</th>
+                <th>Table Footer 5</th>
+              </tr>
+              </tfoot>
+              <tbody>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              </tbody>
+            </table>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__code">
+            <header><h1>Code</h1></header>
+            <div>
+              <p><strong>Keyboard input: </strong><kbd>Cmd</kbd></p>
+              <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+              <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+              <h2>Pre-formatted text</h2>
+              <pre>P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ </pre>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__inline">
+            <header><h1>Inline elements</h1></header>
+            <div>
+              <p><a href="#!">This is a text link</a>.</p>
+              <p><strong>Strong is used to indicate strong importance.</strong></p>
+              <p><em>This text has added emphasis.</em></p>
+              <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+              <p>The <i>i element</i> is text that is offset from the normal text.</p>
+              <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+              <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+              <p><s>This text has a strikethrough</s>.</p>
+              <p>Superscript<sup>®</sup>.</p>
+              <p>Subscript for things like H<sub>2</sub>O.</p>
+              <p><small>This small text is small for for fine print, etc.</small></p>
+              <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+              <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+              <p><cite>This is a citation.</cite></p>
+              <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+              <p>The <mark>mark element</mark> indicates a highlight.</p>
+              <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+              <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__comments">
+            <header><h1>HTML Comments</h1></header>
+            <div>
+              <p>There is comment here: <!--This comment should not be displayed--></p>
+              <p>There is a comment spanning multiple tags and lines below here.</p>
+              <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
+              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
+              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
+            </div>
+                        <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+        <section id="embedded">
+          <header><h1>Embedded content</h1></header>
+          <article id="embedded__images">
+            <header><h2>Images</h2></header>
+            <div>
+              <h3>No <code>&lt;figure&gt;</code> element</h3>
+              <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
+              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+              <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
+              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+              <figure>
+                <img src="http://placekitten.com/420/420" alt="Image alt text">
+                <figcaption>Here is a caption for this image.</figcaption>
+              </figure>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__audio">
+            <header><h2>Audio</h2></header>
+            <div><audio controls="">audio</audio></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__video">
+            <header><h2>Video</h2></header>
+            <div><video controls="">video</video></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__canvas">
+            <header><h2>Canvas</h2></header>
+            <div><canvas>canvas</canvas></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__meter">
+            <header><h2>Meter</h2></header>
+            <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__progress">
+            <header><h2>Progress</h2></header>
+            <div><progress>progress</progress></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__svg">
+            <header><h2>Inline SVG</h2></header>
+            <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__iframe">
+            <header><h2>IFrame</h2></header>
+            <div><iframe src="index.html" height="300"></iframe></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+        </section>
+        <section id="forms">
+          <header><h1>Form elements</h1></header>
+          <form>
+            <fieldset id="forms__input">
+              <legend>Input fields</legend>
+              <p>
+                <label for="input__text">Text Input</label>
+                <input id="input__text" type="text" placeholder="Text Input">
+              </p>
+              <p>
+                <label for="input__password">Password</label>
+                <input id="input__password" type="password" placeholder="Type your Password">
+              </p>
+              <p>
+                <label for="input__webaddress">Web Address</label>
+                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+              </p>
+              <p>
+                <label for="input__emailaddress">Email Address</label>
+                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+              </p>
+              <p>
+                <label for="input__phone">Phone Number</label>
+                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+              </p>
+              <p>
+                <label for="input__search">Search</label>
+                <input id="input__search" type="search" placeholder="Enter Search Term">
+              </p>
+              <p>
+                <label for="input__text2">Number Input</label>
+                <input id="input__text2" type="number" placeholder="Enter a Number">
+              </p>
+              <p>
+                <label for="input__text3" class="error">Error</label>
+                <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+              </p>
+              <p>
+                <label for="input__text4" class="valid">Valid</label>
+                <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__select">
+              <legend>Select menus</legend>
+              <p>
+                <label for="select">Select</label>
+                <select id="select">
+                  <optgroup label="Option Group">
+                    <option>Option One</option>
+                    <option>Option Two</option>
+                    <option>Option Three</option>
+                  </optgroup>
+                </select>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__checkbox">
+              <legend>Checkboxes</legend>
+              <ul class="list list--bare">
+                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+              </ul>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__radio">
+              <legend>Radio buttons</legend>
+              <ul class="list list--bare">
+                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
+                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
+                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+              </ul>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__textareas">
+              <legend>Textareas</legend>
+              <p>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__html5">
+              <legend>HTML5 inputs</legend>
+              <p>
+                <label for="ic">Color input</label>
+                <input type="color" id="ic" value="#000000">
+              </p>
+              <p>
+                <label for="in">Number input</label>
+                <input type="number" id="in" min="0" max="10" value="5">
+              </p>
+              <p>
+                <label for="ir">Range input</label>
+                <input type="range" id="ir" value="10">
+              </p>
+              <p>
+                <label for="idd">Date input</label>
+                <input type="date" id="idd" value="1970-01-01">
+              </p>
+              <p>
+                <label for="idm">Month input</label>
+                <input type="month" id="idm" value="1970-01">
+              </p>
+              <p>
+                <label for="idw">Week input</label>
+                <input type="week" id="idw" value="1970-W01">
+              </p>
+              <p>
+                <label for="idt">Datetime input</label>
+                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+              </p>
+              <p>
+                <label for="idtl">Datetime-local input</label>
+                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__action">
+              <legend>Action buttons</legend>
+              <p>
+                <input type="submit" value="<input type=submit>">
+                <input type="button" value="<input type=button>">
+                <input type="reset" value="<input type=reset>">
+                <input type="submit" value="<input disabled>" disabled>
+              </p>
+              <p>
+                <button type="submit">&lt;button type=submit&gt;</button>
+                <button type="button">&lt;button type=button&gt;</button>
+                <button type="reset">&lt;button type=reset&gt;</button>
+                <button type="button" disabled>&lt;button disabled&gt;</button>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+          </form>
+        </section>
+      </div>
+    </main>
+
+
+    <footer role="contentinfo">
+      <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+    </footer>
+
+  <script type="text/javascript" src="prism.js"></script>
+  </body>
+</html>
